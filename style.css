@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 2px;
+    padding: 2px;
+  }
+  
+  body {
+    color: #f1f0ed;
+    display: flex;
+    font-family: fantasy;
+    justify-content: center;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .title span {
+    color: #030303;
+  }
+  
+  .status-action {
+    display: flex;
+    margin-top: 25px;
+    font-size: 25px;
+    justify-content: space-around;
+    height: 30px;
+  }
+  
+  .status {
+    color: #030303
+  }
+
+  .status span {
+    color: #1b1b19;
+  }
+  
+  .reset {
+    cursor: pointer;
+  }
+  
+  .reset {
+    color: #030303
+  }
+
+  .reset:hover {
+    color: #141413;
+  }
+  
+  .game-grid {
+    background: #fafafa;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-top: 50px;
+  }
+  
+  .game-cell {
+    background: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+  }
+  
+  .x,
+  .o {
+    cursor: default;
+  }
+  
+  .x::after {
+    content: '×';
+    font-size: 200px;
+  }
+  
+  .o::after {
+    content: '○';
+    color: #F2EBD3;
+    font-size: 225px;
+  }
+  
+  .o {
+    font-family: Helvetica 
+  }
+
+  .won::after {
+    color: #BD022F;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .game-grid {
+      margin-top: 25px;
+      grid-gap: 10px;
+    }
+  
+    .game-cell {
+      height: 150px;
+      width: 150px;
+    }
+  
+    .x::after {
+      font-size: 150px;
+    }
+  
+    .o::after {
+      font-size: 175px;
+    }
+  }
+  
+  @media only screen and (max-width: 540px) {
+    .container {
+      margin: 25px;
+      padding: 25px;
+    }
+  
+    .game-cell {
+      height: 100px;
+      width: 100px;
+    }
+  
+    .x::after {
+      font-size: 100px;
+    }
+  
+    .o::after {
+      font-size: 125px;
+    }
+  }
+
+  #scoreboard .score {
+    text-align: flex-start;
+    font-size: 30px
+  }
+
+  #scoreboard .score {
+    display: flex
+  }
+
+  #scoreboard .score {
+    justify-content: flex-start
+  }
+
+  #scoreboard .score {
+    text-align: center
+  }
+  
+  #scoreboard .score#player1 {
+    color: #131212;
+  }
+  
+  #scoreboard .score#player2 {
+    color: #101111;
+  }
+
+#scoreboard {
+  color: #ec1010
+}  
